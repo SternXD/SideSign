@@ -1,6 +1,6 @@
 # SideSign
 
-Swift package for **my** fork of SideStore until I PR this to [SideStore](https://github.com/SideStore/SideStore) 
+Swift package for **my** [fork](https://github.com/SternXD/SideStore/tree/alt-prefix-change/) of SideStore until I PR this to [SideStore](https://github.com/SideStore/SideStore) 
 
 **IT WILL NOT WORK ON THE REGULAR SIDESTORE REPO**
 

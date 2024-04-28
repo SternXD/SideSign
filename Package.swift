@@ -5,28 +5,28 @@ import Foundation
 import PackageDescription
 
 let package = Package(
-    name: "AltSign",
+    name: "SideSign",
     platforms: [
         .iOS(.v12),
         .macOS(.v10_14)
     ],
     products: [
-		// MARK: - AltSign
+		// MARK: - SideSign
         .library(
-            name: "AltSign",
-            targets: ["AltSign"]
+            name: "SideSign",
+            targets: ["SideSign"]
         ),
 
         .library(
-            name: "AltSign-Static",
+            name: "SideSign-Static",
             type: .static,
-            targets: ["AltSign"]
+            targets: ["SideSign"]
         ),
 
         .library(
-            name: "AltSign-Dynamic",
+            name: "SideSign-Dynamic",
             type: .dynamic,
-            targets: ["AltSign"]
+            targets: ["SideSign"]
         ),
 
 		// MARK: - CoreCrypto
@@ -70,12 +70,12 @@ let package = Package(
 		.package(url: "https://github.com/SideStore/iMobileDevice.swift", .upToNextMinor(from: "1.0.4"))
     ],
     targets: [
-        // MARK: - AltSign
+        // MARK: - SideSign
 
         .target(
-            name: "AltSign",
+            name: "SideSign",
             dependencies: [
-                "CAltSign"
+                "CSideSign"
             ],
             cSettings: [
                 .headerSearchPath("../minizip/include"),
@@ -84,12 +84,12 @@ let package = Package(
         ),
 
 		.testTarget(
-			name: "AltSignTests",
-			dependencies: ["AltSign"]
+			name: "SideSignTests",
+			dependencies: ["SideSign"]
 		),
 
         .target(
-            name: "CAltSign",
+            name: "CSideSign",
             dependencies: [
                 "CoreCrypto",
                 "ldid",
@@ -98,7 +98,7 @@ let package = Package(
             publicHeadersPath: "include",
             cSettings: [
                 .headerSearchPath("include/"),
-                .headerSearchPath("include/AltSign"),
+                .headerSearchPath("include/SideSign"),
                 .headerSearchPath("Capabilities"),
                 .headerSearchPath("../ldid"),
                 .headerSearchPath("../ldid/include"),
@@ -108,7 +108,7 @@ let package = Package(
             ],
             cxxSettings: [
                 .headerSearchPath("include/"),
-                .headerSearchPath("include/AltSign"),
+                .headerSearchPath("include/SideSign"),
                 .headerSearchPath("Capabilities"),
                 .headerSearchPath("../ldid"),
                 .headerSearchPath("../ldid/include"),

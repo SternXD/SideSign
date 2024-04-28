@@ -1,6 +1,6 @@
 //
 //  SIDESigner.m
-//  AltSign
+//  SideSign
 //
 //  Created by Riley Testut on 5/22/19.
 //  Copyright © 2019 Riley Testut. All rights reserved.
@@ -238,7 +238,7 @@ std::string CertificatesContent(SIDECertificate *altCertificate)
         appBundleURL = [[NSFileManager defaultManager] unzipAppBundleAtURL:appURL toDirectory:outputDirectoryURL error:&error];
         if (appBundleURL == nil)
         {
-            finish(NO, [NSError errorWithDomain:AltSignErrorDomain code:SIDEErrorMissingAppBundle userInfo:@{NSUnderlyingErrorKey: error}]);
+            finish(NO, [NSError errorWithDomain:SideSignErrorDomain code:SIDEErrorMissingAppBundle userInfo:@{NSUnderlyingErrorKey: error}]);
             return progress;
         }
     }
@@ -250,14 +250,14 @@ std::string CertificatesContent(SIDECertificate *altCertificate)
     NSBundle *appBundle = [NSBundle bundleWithURL:appBundleURL];
     if (appBundle == nil)
     {
-        finish(NO, [NSError errorWithDomain:AltSignErrorDomain code:SIDEErrorInvalidApp userInfo:nil]);
+        finish(NO, [NSError errorWithDomain:SideSignErrorDomain code:SIDEErrorInvalidApp userInfo:nil]);
         return progress;
     }
     
     SIDEApplication *application = [[SIDEApplication alloc] initWithFileURL:appBundleURL];
     if (application == nil)
     {
-        finish(NO, [NSError errorWithDomain:AltSignErrorDomain code:SIDEErrorInvalidApp userInfo:nil]);
+        finish(NO, [NSError errorWithDomain:SideSignErrorDomain code:SIDEErrorInvalidApp userInfo:nil]);
         return progress;
     }
     
@@ -314,7 +314,7 @@ std::string CertificatesContent(SIDECertificate *altCertificate)
             SIDEProvisioningProfile *profile = profileForApp(app);
             if (profile == nil)
             {
-                return [NSError errorWithDomain:AltSignErrorDomain code:SIDEErrorMissingProvisioningProfile userInfo:nil];
+                return [NSError errorWithDomain:SideSignErrorDomain code:SIDEErrorMissingProvisioningProfile userInfo:nil];
             }
             
             NSURL *profileURL = [app.fileURL URLByAppendingPathComponent:@"embedded.mobileprovision"];
@@ -474,7 +474,7 @@ std::string CertificatesContent(SIDECertificate *altCertificate)
         }
         catch (std::exception& exception)
         {
-            NSError *error = [NSError errorWithDomain:AltSignErrorDomain code:SIDEErrorUnknown userInfo:@{NSLocalizedDescriptionKey: @(exception.what())}];
+            NSError *error = [NSError errorWithDomain:SideSignErrorDomain code:SIDEErrorUnknown userInfo:@{NSLocalizedDescriptionKey: @(exception.what())}];
             finish(NO, error);
         }
     });

@@ -1,12 +1,12 @@
 //
 //  SIDEAppleAPI+Private.h
-//  AltSign
+//  SideSign
 //
 //  Created by Riley Testut on 11/16/19.
 //  Copyright © 2019 Riley Testut. All rights reserved.
 //
 
-#import <AltSign/SIDEAppleAPI.h>
+#import <SideSign/SIDEAppleAPI.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

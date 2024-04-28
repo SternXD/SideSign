@@ -1,6 +1,6 @@
 //
 //  NSError+SIDEError.m
-//  AltSign
+//  SideSign
 //
 //  Created by Riley Testut on 5/10/19.
 //  Copyright © 2019 Riley Testut. All rights reserved.
@@ -8,14 +8,14 @@
 
 #import "NSError+SIDEErrors.h"
 
-NSErrorDomain const AltSignErrorDomain = @"com.rileytestut.AltSign";
+NSErrorDomain const SideSignErrorDomain = @"com.rileytestut.SideSign";
 NSErrorDomain const SIDEAppleAPIErrorDomain = @"com.rileytestut.SIDEAppleAPI";
 
 @implementation NSError (SIDEError)
 
 + (void)load
 {
-    [NSError setUserInfoValueProviderForDomain:AltSignErrorDomain provider:^id _Nullable(NSError * _Nonnull error, NSErrorUserInfoKey  _Nonnull userInfoKey) {
+    [NSError setUserInfoValueProviderForDomain:SideSignErrorDomain provider:^id _Nullable(NSError * _Nonnull error, NSErrorUserInfoKey  _Nonnull userInfoKey) {
         if ([userInfoKey isEqualToString:NSLocalizedFailureReasonErrorKey])
         {
             return [error alt_localizedFailureReason];

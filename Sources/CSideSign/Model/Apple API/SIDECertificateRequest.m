@@ -1,6 +1,6 @@
 //
 //  SIDECertificateRequest.m
-//  AltSign
+//  SideSign
 //
 //  Created by Riley Testut on 5/21/19.
 //  Copyright © 2019 Riley Testut. All rights reserved.
@@ -84,8 +84,8 @@
     const char *country = "US";
     const char *state = "CA";
     const char *city = "Los Angeles";
-    const char *organization = "AltSign";
-    const char *commonName = "AltSign";
+    const char *organization = "SideSign";
+    const char *commonName = "SideSign";
     
     request = X509_REQ_new();
     if (X509_REQ_set_version(request, 1) != 1)

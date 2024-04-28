@@ -1,6 +1,6 @@
 //
 //  SIDEAppID.h
-//  AltSign
+//  SideSign
 //
 //  Created by Riley Testut on 5/21/19.
 //  Copyright © 2019 Riley Testut. All rights reserved.

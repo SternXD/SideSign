@@ -1,6 +1,6 @@
 //
 //  SIDEAppleAPI+Authentication.swift
-//  AltSign
+//  SideSign
 //
 //  Created by Riley Testut on 8/15/20.
 //  Copyright © 2020 Riley Testut. All rights reserved.
@@ -8,8 +8,8 @@
 
 import Foundation
 
-@_exported import CAltSign
-import CAltSign.Private
+@_exported import CSideSign
+import CSideSign.Private
 
 public extension SIDEAppleAPI {
     @objc func authenticate(appleID unsanitizedAppleID: String,

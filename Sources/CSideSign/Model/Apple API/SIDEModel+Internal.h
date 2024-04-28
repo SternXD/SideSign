@@ -1,19 +1,19 @@
 //
 //  SIDEModel+Internal.h
-//  AltSign
+//  SideSign
 //
 //  Created by Riley Testut on 5/28/19.
 //  Copyright © 2019 Riley Testut. All rights reserved.
 //
 
-#import <AltSign/SIDEAccount.h>
-#import <AltSign/SIDETeam.h>
-#import <AltSign/SIDEDevice.h>
-#import <AltSign/SIDECertificate.h>
-#import <AltSign/SIDECertificateRequest.h>
-#import <AltSign/SIDEAppID.h>
-#import <AltSign/SIDEAppGroup.h>
-#import <AltSign/SIDEProvisioningProfile.h>
+#import <SideSign/SIDEAccount.h>
+#import <SideSign/SIDETeam.h>
+#import <SideSign/SIDEDevice.h>
+#import <SideSign/SIDECertificate.h>
+#import <SideSign/SIDECertificateRequest.h>
+#import <SideSign/SIDEAppID.h>
+#import <SideSign/SIDEAppGroup.h>
+#import <SideSign/SIDEProvisioningProfile.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

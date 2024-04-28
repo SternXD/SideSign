@@ -1,6 +1,6 @@
 //
 //  NSFileManager+Zip.m
-//  AltSign
+//  SideSign
 //
 //  Created by Riley Testut on 5/28/19.
 //  Copyright © 2019 Riley Testut. All rights reserved.
@@ -287,7 +287,7 @@ char SIDEDirectoryDeliminator = '/';
         }
     }
     
-    *error = [NSError errorWithDomain:AltSignErrorDomain code:SIDEErrorMissingAppBundle userInfo:@{NSURLErrorKey: ipaURL}];
+    *error = [NSError errorWithDomain:SideSignErrorDomain code:SIDEErrorMissingAppBundle userInfo:@{NSURLErrorKey: ipaURL}];
     return nil;
 }
 

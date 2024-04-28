@@ -1,15 +1,15 @@
 //
-//  AltSignTests.swift
-//  AltSign
+//  SideSignTests.swift
+//  SideSign
 //
 //  Created by Joseph Mattiello on 2/24/23.
 //  Copyright © 2023 Joseph Mattiello. All rights reserved.
 //
 
-@testable import AltSign
+@testable import SideSign
 import XCTest
 
-class AltSignTests: XCTestCase {
+class SideSignTests: XCTestCase {
     override func setUp() {
         super.setUp()
         // Put setup code here. This method is called before the invocation of each test method in the class.

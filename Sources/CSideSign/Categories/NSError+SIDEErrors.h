@@ -1,6 +1,6 @@
 //
 //  NSError+SIDEErrors.h
-//  AltSign
+//  SideSign
 //
 //  Created by Riley Testut on 5/10/19.
 //  Copyright © 2019 Riley Testut. All rights reserved.
@@ -8,8 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-extern NSErrorDomain const AltSignErrorDomain;
-typedef NS_ERROR_ENUM(AltSignErrorDomain, SIDEError)
+extern NSErrorDomain const SideSignErrorDomain;
+typedef NS_ERROR_ENUM(SideSignErrorDomain, SIDEError)
 {
     SIDEErrorUnknown,
     SIDEErrorInvalidApp,

@@ -1,38 +1,38 @@
 //
-//  AltSign.h
-//  AltSign
+//  SideSign.h
+//  SideSign
 //
 //  Created by Riley Testut on 5/10/19.
 //  Copyright © 2019 Riley Testut. All rights reserved.
 //
 
 // Apple API
-#import <AltSign/SIDEAppleAPI.h>
-#import <AltSign/SIDEAppleAPISession.h>
+#import <SideSign/SIDEAppleAPI.h>
+#import <SideSign/SIDEAppleAPISession.h>
 
 // Signing
-#import <AltSign/SIDESigner.h>
+#import <SideSign/SIDESigner.h>
 
 // Model
-#import <AltSign/SIDEApplication.h>
-#import <AltSign/SIDEAccount.h>
-#import <AltSign/SIDEAnisetteData.h>
-#import <AltSign/SIDETeam.h>
-#import <AltSign/SIDEDevice.h>
-#import <AltSign/SIDECertificate.h>
-#import <AltSign/SIDEAppID.h>
-#import <AltSign/SIDEAppGroup.h>
-#import <AltSign/SIDEProvisioningProfile.h>
+#import <SideSign/SIDEApplication.h>
+#import <SideSign/SIDEAccount.h>
+#import <SideSign/SIDEAnisetteData.h>
+#import <SideSign/SIDETeam.h>
+#import <SideSign/SIDEDevice.h>
+#import <SideSign/SIDECertificate.h>
+#import <SideSign/SIDEAppID.h>
+#import <SideSign/SIDEAppGroup.h>
+#import <SideSign/SIDEProvisioningProfile.h>
 
 // Categories
-#import <AltSign/NSError+SIDEErrors.h>
-#import <AltSign/NSFileManager+Zip.h>
+#import <SideSign/NSError+SIDEErrors.h>
+#import <SideSign/NSFileManager+Zip.h>
 
 // Capabilities
-#import <AltSign/SIDECapabilities.h>
+#import <SideSign/SIDECapabilities.h>
 
-//! Project version number for AltSign.
-FOUNDATION_EXPORT double AltSignVersionNumber;
+//! Project version number for SideSign.
+FOUNDATION_EXPORT double SideSignVersionNumber;
 
-//! Project version string for AltSign.
-FOUNDATION_EXPORT const unsigned char AltSignVersionString[];
+//! Project version string for SideSign.
+FOUNDATION_EXPORT const unsigned char SideSignVersionString[];

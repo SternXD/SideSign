@@ -1,6 +1,8 @@
 # SideSign
 
-Swift package for SideStore library
+Swift package for **my** fork of SideStore until I PR this to [SideStore](https://github.com/SideStore/SideStore) 
+
+**IT WILL NOT WORK ON THE REGULAR SIDESTORE REPO**
 
 ## Progress
 

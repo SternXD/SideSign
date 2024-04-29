@@ -8,8 +8,8 @@ copyright: 'See [license](https://github.com/SideStore/SideSign/blob/develop/LIC
 # ---- URLs ----
 author_url: https://sidestore.io
 dash_url: https://sidestore.io/docsets/SideSign.xml
-github_url: https://github.com/SideStore/SideSign/
-github_file_prefix: https://github.com/SideStore/SideSign/tree/1.0.0/
+github_url: https://github.com/SternXD/SideSign/
+github_file_prefix: https://github.com/SternXD/SideSign/tree/1.0.0/
 
 # ---- Sources ----
 source_directory: Sources

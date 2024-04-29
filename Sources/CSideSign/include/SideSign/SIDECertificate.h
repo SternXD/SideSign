@@ -1,1 +1,1 @@
-../../Model/Apple API/ALTCertificate.h
+Model/Apple API/SIDECertificate.h

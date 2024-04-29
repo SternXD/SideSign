@@ -1,1 +1,1 @@
-../../Model/Apple API/ALTDevice.h
+Model/Apple API/SIDEDevice.h

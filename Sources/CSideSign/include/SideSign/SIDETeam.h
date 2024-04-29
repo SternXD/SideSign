@@ -1,1 +1,1 @@
-../../Model/Apple API/ALTTeam.h
+Model/Apple API/SIDETeam.h

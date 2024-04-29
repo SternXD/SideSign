@@ -1,1 +1,1 @@
-../../Apple API/ALTAppleAPISession.h
+Apple API/SIDEAppleAPISession.h
